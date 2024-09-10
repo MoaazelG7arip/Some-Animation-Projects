@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="bg">
+            <div class="background-1" data-speed="2"></div>
+            <div class="background-2" data-speed="4"></div>
+            <div class="background-3" data-speed="5"></div>
+            <div class="background-4" data-speed="7"></div>
+            <div class="background-5" data-speed="8"></div>
+            <div class="background-6" data-speed="12"></div>
+        </div>
+        <div class="container">
+
+            <div class="nav-bar">
+                <div class="logo">
+                    <img src="./images/logo-ww.svg" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">SIGN UP</a></li>
+                        <li>
+                            <button class="icon">
+                                <svg data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M97.092 36.078H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 61.889H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222zM97.092 87.7H30.908a2.111 2.111 0 0 0 0 4.222h66.184a2.111 2.111 0 0 0 0-4.222z"/></svg>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="down">
+            <svg width="40" height="56" viewBox="0 0 40 56" fill="none" id="scroll-icon">
+                <rect x="0.5" y="0.5" width="39" height="55" rx="19.5" stroke="orangered"/>
+                <path d="M20 37V19M24 33L20 37L24 33ZM20 37L16 33L20 37Z" stroke="orangered" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="content">
+                <h2>Embark on a journey into the heart of nature.</h2>
+                <hr>
+                <p>From the howls of wolves under the moonlit sky to the ancient secrets of the mountains and valleys, explore stories that bring the wilderness to life.</p>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <h4>The Howl of the Midnight Wolf</h4>
+                    <p>In the heart of the dense forest, where the moonlight barely touches the ground, a lone wolf's howl pierces the night. It is said that this is no ordinary wolf, but a guardian of ancient secrets, calling out to those brave enough to uncover the mysteries of the wilderness...</p>
+                    <button>Read Full Story</button>
+                </div>
+                <div class="box">
+                    <h4>Whispers of the Forgotten Valley</h4>
+                    <p>Nestled between towering peaks lies a valley shrouded in mist and legend. Travelers speak of voices carried on the wind, a language not spoken by any living creature. These whispers tell tales of a time when the earth was young and nature's magic flowed freely...</p>
+                    <button>Read Full Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

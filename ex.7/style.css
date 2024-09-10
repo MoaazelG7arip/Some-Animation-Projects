@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(18, 18, 43);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+svg{
+    height: 110px;
+    width: 350px;
+}
+svg text{
+    font-size: 4rem;
+    font-weight: bold;
+    animation: loading 5s ease-in-out infinite alternate;
+    -webkit-animation: loading 5s ease-in-out infinite alternate;
+    fill: transparent;
+    stroke: white;
+}
+
+@keyframes loading{
+    0% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0 30%;
+    }
+    40% {
+        stroke-dashoffset: 60%;
+    }
+    80% {
+        stroke-dashoffset: -10%;
+        fill: transparent;
+        stroke-dasharray: 30% 0;
+        stroke-width: 1;
+    }
+    100% {
+        stroke-width: 0;
+        stroke-dasharray: 0;
+        fill: white;
+    }
+}

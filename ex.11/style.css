@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+}
+header ul{
+    display: flex;
+}
+
+header li{
+    margin-inline: 10px;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+}
+li a:hover{
+    text-decoration: underline;
+}
+.project-link a{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1.2rem;
+}
+.project-link span{
+    transition: .5s cubic-bezier(.34,-0.45,.47,2.06);
+    -webkit-transition: .5s cubic-bezier(.34,-0.45,.47,2.06);
+    -moz-transition: .5s cubic-bezier(.34,-0.45,.47,2.06);
+    -ms-transition: .5s cubic-bezier(.34,-0.45,.47,2.06);
+    -o-transition: .5s cubic-bezier(.34,-0.45,.47,2.06);
+    display: inline-block;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.project-link a:hover span{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+
+}
+
+section .content{
+    font-size: 4.7rem;
+    font-weight: 700;
+    color: #333;
+    padding-block: 70px 50px;
+}
+section .content span{
+    color: goldenrod
+}
+
+.work{
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.work::after{
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background-color: #782379;
+    border-radius: 50%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -ms-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.work:hover::after{
+    top:0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+.work .work-text{
+    display: inline-block;
+    z-index: 5;
+    position: relative;
+}

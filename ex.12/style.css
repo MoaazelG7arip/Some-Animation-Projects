@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: #aaa;
+    --second-color: #BF4700;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+
+    border:2px solid #0E0E0E;
+}
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+body{
+    background-color: #0E0E0E;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+span.cursor{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #555;
+    position: absolute;
+
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+
+    opacity: 0;
+    z-index: -10;
+}
+/* header */
+header{
+    padding-block: 30px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    margin-inline: 10px;
+    
+}
+a{
+    text-decoration: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    color: white;
+}
+header li a{
+    color:#aaa;
+}
+li a:hover{
+    color: white;
+}
+header .content{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+header h1{
+    font-size: 6rem;
+    line-height: 1em;
+    padding-block: 30px;
+}
+header p{
+    color: var(--text-color);
+    font-size: 2rem;
+}
+header .content .links,
+footer .links{
+    display: flex;
+    padding-block: 20px;
+    font-size: 1.3rem;
+    justify-content: center;
+    font-weight: bold;
+}
+header .links a:hover,
+footer .links a:hover{
+    color: var(--second-color)
+}
+.links a{
+    position: relative;
+    margin-inline: 2rem;
+}
+header .links a:not(:last-child)::after,
+.entry p span:not(:last-child)::after,
+footer .links a:not(:last-child):after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 20px;
+    background-color: var(--text-color);
+    right: calc(-2rem - 10px);
+    top: 60%;
+}
+header .content svg *{
+    stroke:var(--second-color)
+}
+/* portfolio */
+
+.entry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 100px;
+}
+.entry .meta{
+    width: 35%;
+}
+.entry .meta span{
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+}
+.entry .meta p span:first-child{
+    margin-right:4rem;
+}
+
+.entry .meta h4{
+    font-size: 1.7rem;
+    margin-block: 20px;
+
+}
+.entry .media{
+    width: 60%;
+}
+.entry figure,
+.entry img{
+    width: 100%;
+}
+.entry figure{
+    background-color: #232323;
+    padding: 70px;
+}
+/* footer */
+
+footer{
+    text-align: center;
+    padding: 100px 0 70px;
+}
+footer .content p{
+    color: var(--text-color);
+    margin-block: 30px;
+}
+footer .content h4{
+    font-size: 4rem;
+    width: 70%;
+    margin: auto;
+}
+
+footer .content a{
+    color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    width: fit-content;
+    margin: auto;
+
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+    margin-block: 4rem;
+}
+footer .content a:hover{
+    gap: 2rem;
+}
+footer div:last-child{
+    font-size: 1.2rem;
+}

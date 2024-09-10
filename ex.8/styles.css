@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+
+    overflow: hidden;
+    background-color: white;
+}
+section .left{
+    width: 40%;
+    text-align: center;
+}
+section .right{
+    width: 60%;
+    overflow: hidden;
+}
+.right img{
+    height: 100%;
+}
+.left .logo{
+    margin: 60px 0 40px;
+}
+.left .logo img{
+    width: 70px;
+}
+.left p{
+    color: #777;
+    margin-block: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    padding: 10px;
+    margin-block: 10px;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: 1.3rem;
+}
+form input::placeholder{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.566);
+}
+input:focus{
+    outline: none;
+}
+.left .container{
+    width: 60%;
+}
+.left form a{
+    color:rgb(47, 143, 96);
+    text-align: start;
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(31, 29, 29);
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
+    margin-block: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left p:last-of-type{
+    margin-top: 20px;
+}
+button.loading .text{
+    display: none;
+}
+button.loading .loadingBullet{
+    display: flex;
+}
+button.success .loadingBullet{
+    display: none;
+}
+button .loadingBullet{
+    display: none;
+}
+button.success{
+    background-color: rgb(47, 143, 96);
+    pointer-events: none;
+}
+.loadingBullet div{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-inline: 3px;
+    animation: bullet 2s infinite ease-in-out;
+    -webkit-animation: bullet 2s infinite ease-in-out;
+    opacity: 0;
+}
+
+.loadingBullet div:nth-of-type(2){
+    animation-delay: .1s;
+}
+.loadingBullet div:nth-of-type(3){
+    animation-delay: .2s;
+}
+
+@keyframes bullet {
+    0%,80%,100%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+}

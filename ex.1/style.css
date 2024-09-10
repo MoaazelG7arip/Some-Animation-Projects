@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    background-color: #0d1321;
+    position: relative;
+    color: rgb(239, 231, 231);
+    font-family: "Roboto", sans-serif;
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    color: #aaa;
+}
+h5{
+    font-size: 1.1rem;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.content *{
+    margin-block: 10px;
+}
+.content > div{
+    width: 48%;
+}
+.content iframe{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border: 1px solid rgb(35, 42, 92)
+}
+
+.inner-content{
+    display: flex;
+    justify-content: space-between;
+}
+.inner-content > div{
+    width: 45%;
+}
+i{
+    color: blueviolet;
+    font-size: 2rem;
+}
